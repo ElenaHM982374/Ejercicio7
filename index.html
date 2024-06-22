@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8 - Formulario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/formulario.js" defer></script>
+</head>
+<body>
+    <h1>Registro Informacion</h1>
+    <div class="contenedor">
+    <form action="recibirDatos.php"method="post">
+        <label for="nombre">Nombre: </label><span class="ocultar MensajeNombre">Nombre incorrecto</span>
+<input class="input-buena" autofocus name="nombre" id="nombre" placeholder="Nombre" type="text">
+<i class="ocultar tacheNombre fa-solid fa-circle-xmark"></i>
+<i class="ocultar buenaNombre fa-solid fa-check"></i>
+<label for="celular">Celular: </label><span class="ocultar MensajeCelular" >Celular no valido</span>
+<input name="celular" id="celular"placeholder="Celular" type="text">
+<i class=" ocultar tacheCelular fa-solid fa-circle-xmark"></i>
+<i class=" ocultar buenaCelular fa-solid fa-check"></i>
+<label for="correo">Correo: </label><span class="ocultar MensajeCorreo" >Correo no valido</span>
+<input name="correo" id="correo"placeholder="Correo" type="text">
+<i class="ocultar tacheCorreo fa-solid fa-circle-xmark"></i>
+<i class="ocultar buenaCorreo fa-solid fa-check"></i>
+<button type="submit">Registrar datos</button>
+</form>
+</div>
+</body>
+</html>
